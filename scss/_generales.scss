@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2? family= Arimo:wght@500 & family= Koulen & family= Radio+Canada:wght@600 & familia= Roboto:ital,peso@1,300 &family= Smooch & family= Tiro+Gurmukhi & family= Tiro+Telugu & family= Ubuntu:ital@1 & display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+header{
+    text-transform: uppercase;
+    .colorNav{
+        background-color:#845EC2;
+    }
+}
+footer{
+    background-color:#845EC2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
