@@ -1,0 +1,78 @@
+.encabezadoPadre{
+    grid-area: navegación;
+}
+.tituloPrincipal{
+    grid-area: titulo;
+}
+.publicidadPadre{
+    grid-area: publicidad;
+}
+.secciónPadre{
+    grid-area: introducción;
+}
+.contenedorFotos{
+    grid-area: pictures;
+}
+.tituloComida{
+    grid-area: subtitulo;
+}
+.contenedorRecetas{
+    grid-area: articulo;
+}
+.contenedorFooter{
+    grid-area: footer;
+}
+#grilla{
+    display: grid;
+    grid-template-areas:
+    "navegación"
+    "titulo"
+    "introducción"
+    "pictures"
+    "subtitulo"
+    "articulo"
+    "footer";
+}
+@media (min-width:480px){
+    #grilla{
+        gap:5px;
+        grid-template-areas:
+        "navegación"
+        "titulo"
+        "introducción"
+        "pictures"
+        "subtitulo"
+        "articulo"
+        "publicidad"
+        "footer";
+        grid-template-columns:1fr;
+    }
+}
+@media (min-width:768px){
+    #grilla{
+        gap: 10px;
+        grid-template-areas:
+        "navegación"
+        "titulo"
+        "introducción"
+        "pictures"
+        "subtitulo"
+        "articulo"
+        "publicidad"
+        "footer";
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width:1024px){
+    #grilla{
+        grid-template-areas:
+        "navegación navegación"
+        "titulo titulo"
+        "introducción introducción"
+        "pictures pictures"
+        "subtitulo subtitulo"
+        "articulo publicidad"
+        "footer footer";
+        grid-template-columns: 5fr 2fr;
+    }
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2? family= Arimo:wght@500 & family= Koulen & family= Radio+Canada:wght@600 & familia= Roboto:ital,peso@1,300 &family= Smooch & family= Tiro+Gurmukhi & family= Tiro+Telugu & family= Ubuntu:ital@1 & display=swap");
 * {
   padding: 0;
@@ -5,15 +6,312 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: #FF9671; }
+
+a {
+  border-radius: 8px; }
 
 header {
   text-transform: uppercase; }
   header .colorNav {
     background-color: #845EC2; }
+    header .colorNav div ul li {
+      padding: 8px 25px;
+      border-radius: 6px; }
+      header .colorNav div ul li a:hover {
+        background-color: #df93df;
+        border-radius: 8px;
+        padding: 8px 12px; }
 
 footer {
-  background-color: #845EC2;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
+  background-color: #845EC2; }
+
+figcaption {
+  text-align: center;
+  background-color: #db6ef3; }
+
+figure {
+  display: inline-block;
+  background-color: white;
+  margin: auto; }
+
+h2 {
+  padding: 10px 0px 15px 30px; }
+
+p {
+  padding: 10px 0px 10px 20px; }
+
+.contenedorTitulo {
+  background-color: #D65DB1;
+  color: white;
+  padding: 10px; }
+
+.anchorLink {
+  color: #f7ebeb; }
+
+@media (min-width: 480px) {
+  body {
+    text-align: center; }
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    padding: 15px; } }
+
+@media (min-width: 1024px) {
+  body {
+    text-align: left; }
+  header {
+    position: sticky;
+    top: 0px; }
+  footer {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    justify-content: space-between; }
+  .contenedorTitulo {
+    text-align: center;
+    padding: 20px; } }
+
+.encabezadoPadre {
+  grid-area: navegación; }
+
+.tituloPrincipal {
+  grid-area: titulo; }
+
+.publicidadPadre {
+  grid-area: publicidad; }
+
+.secciónPadre {
+  grid-area: introducción; }
+
+.contenedorFotos {
+  grid-area: pictures; }
+
+.tituloComida {
+  grid-area: subtitulo; }
+
+.contenedorRecetas {
+  grid-area: articulo; }
+
+.contenedorFooter {
+  grid-area: footer; }
+
+#grilla {
+  display: grid;
+  grid-template-areas: "navegación" "titulo" "introducción" "pictures" "subtitulo" "articulo" "footer"; }
+
+@media (min-width: 480px) {
+  #grilla {
+    gap: 5px;
+    grid-template-areas: "navegación" "titulo" "introducción" "pictures" "subtitulo" "articulo" "publicidad" "footer";
+    grid-template-columns: 1fr; } }
+
+@media (min-width: 768px) {
+  #grilla {
+    gap: 10px;
+    grid-template-areas: "navegación" "titulo" "introducción" "pictures" "subtitulo" "articulo" "publicidad" "footer";
+    grid-template-columns: 1fr; } }
+
+@media (min-width: 1024px) {
+  #grilla {
+    grid-template-areas: "navegación navegación" "titulo titulo" "introducción introducción" "pictures pictures" "subtitulo subtitulo" "articulo publicidad" "footer footer";
+    grid-template-columns: 5fr 2fr; } }
+
+@media (min-width: 480px) {
+  .tituloPrincipal {
+    grid-area: titulo;
+    color: red;
+    font-size: 2em;
+    background-color: #D65DB1;
+    padding: 20px;
+    border: 15px solid #be3494;
+    text-shadow: 5px 5px 6px #0a0101; }
+  .publicidadPadre {
+    display: flex;
+    flex-direction: column;
+    background-color: #D65DB1;
+    border: 5px solid #6e0d8e;
+    padding: 10px;
+    margin: 10px; }
+    .publicidadPadre .tituloRecetas {
+      color: red;
+      padding: 10px; }
+    .publicidadPadre .boxHijo {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+      .publicidadPadre .boxHijo .publicidad {
+        background-color: #FFC75F;
+        padding: 10px;
+        border-radius: 6px;
+        margin: 10px; }
+  .contenedorFotos .fotoPrincipal {
+    width: 450px;
+    height: 450px; }
+  .contenedorRecetas {
+    display: flex;
+    flex-direction: column;
+    background-color: #D65DB1;
+    padding: 20px;
+    border: 5px solid #6e0d8e;
+    margin: 15px 10px; }
+    .contenedorRecetas .tituloRecetas {
+      color: red;
+      padding: 10px; }
+    .contenedorRecetas .cajaRecetas {
+      display: flex;
+      flex-direction: column; } }
+
+@media (min-width: 768px) {
+  .contenedorFotos .fotoPrincipal {
+    width: 750px;
+    height: 750px; }
+  .contenedorRecetas {
+    margin: 20px; }
+  .publicidadPadre .boxHijo {
+    flex-direction: row;
+    justify-content: space-around; } }
+
+@media (min-width: 1024px) {
+  .tituloPrincipal {
+    text-shadow: 7px 7px 10px #0a0101;
+    text-align: center;
+    transition: all 1s; }
+    .tituloPrincipal.tituloPrincipal:hover {
+      transform: scale(1.2);
+      background-color: #be3494;
+      border: 15px solid #6b046b; }
+  .publicidadPadre {
+    margin: 20px; }
+    .publicidadPadre .boxHijo {
+      flex-direction: column;
+      justify-content: space-evenly; }
+  .contenedorFotos .fotoPrincipal {
+    width: 800px;
+    height: 800px; }
+  .boxPlatos {
+    margin: 30px;
+    padding: 10px; } }
+
+main div {
+  margin: 10px; }
+
+@media (min-width: 480px) {
+  form {
+    background-color: #e4e460;
+    padding: 30px;
+    margin: 50px; }
+  .contenedorSubtitulo {
+    color: red; }
+  .contenedorForm {
+    margin: 40px 50px; }
+  .tituloFormulario {
+    color: #fd0000;
+    padding: 10px; }
+  .contenedorListado {
+    background-color: #D65DB1;
+    border: 6px ridge #ad00ad; }
+  .listadoPasos {
+    text-align: left; }
+  .seccionFabricacion {
+    background-color: #D65DB1;
+    border: 6px ridge #ad00ad;
+    padding: 10px;
+    margin: 20px 20px; }
+  .videoFabricacion {
+    width: 420px;
+    height: 300px; }
+  .imagenFabricación {
+    height: 300px;
+    width: 400px; }
+  .contenedorVideo {
+    display: inline-block;
+    border: 8px ridge #a609da; }
+  .contenedorProductos {
+    background-color: #F9F871;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 40px; }
+  .contenedorPadre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+  .imgProductos {
+    width: 420px;
+    height: 420px; }
+  .listaProductos {
+    margin-left: 5px; }
+  .contenedorArticulo {
+    background-color: #845EC2;
+    padding: 30px;
+    border: 5px groove #a609da;
+    margin: 15px; } }
+
+@media (min-width: 768px) {
+  form {
+    text-align: left;
+    padding: 10px 30px;
+    margin: 20px 20px; }
+  ol li {
+    margin-left: 15px; }
+  .contenedorArticulo {
+    padding: 15px;
+    border: 8px groove #a609da;
+    margin: 30px; }
+  .contenedorListado {
+    padding: 20px;
+    margin: 20px; }
+  .contenedorPadre {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: stretch; }
+  .imgProductos {
+    width: 320px;
+    height: 320px; }
+  .seccionFabricacion {
+    padding: 20px;
+    margin: 25px 20px; }
+  .imagenFabricación {
+    width: 450px;
+    height: 300px; }
+  .videoFabricacion {
+    width: 550px;
+    height: 420px; } }
+
+@media (min-width: 1024px) {
+  form {
+    padding: 30px 60px;
+    margin: 30px 60px; }
+  .imgProductos {
+    width: 315px;
+    height: 310px; }
+  .contenedorSubtitulo {
+    padding: 30px 10px; }
+  .contenedorSubtitulo h2:hover {
+    font-weight: 600; }
+  .contenedorProductos {
+    background-color: #FF9671;
+    transition: all 1s;
+    padding: 20px 25px;
+    border-radius: 12px;
+    margin: auto;
+    margin-bottom: 20px; }
+  .contenedorProductos:hover {
+    background-color: #F9F871;
+    padding: 20px 25px;
+    border-radius: 12px;
+    margin: auto;
+    margin-bottom: 20px; }
+  .listaProductos {
+    padding-top: 10px; }
+  .seccionFabricacion {
+    padding: 30px;
+    margin: 50px 70px; }
+  .imagenFabricación {
+    height: 350px;
+    width: 450px; }
+  .videoFabricacion {
+    width: 530px;
+    height: 420px; } }
