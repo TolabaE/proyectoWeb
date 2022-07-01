@@ -13,6 +13,7 @@
         flex-direction:column;
         background-color:#D65DB1;
         border: 5px solid rgb(110, 13, 142);
+        border-radius: 10px;
         padding: 10px;
         margin: 10px;
 
@@ -27,7 +28,7 @@
             margin: 10px;
 
             .publicidad{
-                background-color:#FFC75F;
+                background-color:rgb(223, 147, 223);
                 padding: 10px;
                 border-radius: 6px;
                 margin: 10px;
@@ -47,6 +48,7 @@
         background-color:#D65DB1;
         padding: 20px;
         border: 5px solid rgb(110, 13, 142);
+        border-radius: 10px;
         margin:15px 10px;
 
         .tituloRecetas{
@@ -57,6 +59,12 @@
         .cajaRecetas{
             display: flex;
             flex-direction: column;
+
+            .boxPlatos{
+                background-color:rgb(223, 147, 223);
+                border-radius: 10px;
+                margin: 10px;
+            }
         }
     }
     
@@ -87,7 +95,11 @@
         &.tituloPrincipal:hover{
             transform: scale(1.2);
             background-color:#be3494 ;
-            border:15px solid rgb(107, 4, 107) ;
+            border:15px solid rgb(159, 7, 159);
+        }
+        h1{
+            font-weight: 700;
+            font-size: 50px;
         }
     }
     .publicidadPadre{

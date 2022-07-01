@@ -51,7 +51,7 @@ p {
   padding: 10px; }
 
 .anchorLink {
-  color: #f7ebeb; }
+  color: red; }
 
 @media (min-width: 480px) {
   body {
@@ -136,6 +136,7 @@ p {
     flex-direction: column;
     background-color: #D65DB1;
     border: 5px solid #6e0d8e;
+    border-radius: 10px;
     padding: 10px;
     margin: 10px; }
     .publicidadPadre .tituloRecetas {
@@ -147,7 +148,7 @@ p {
       justify-content: space-evenly;
       margin: 10px; }
       .publicidadPadre .boxHijo .publicidad {
-        background-color: #FFC75F;
+        background-color: #df93df;
         padding: 10px;
         border-radius: 6px;
         margin: 10px; }
@@ -160,13 +161,18 @@ p {
     background-color: #D65DB1;
     padding: 20px;
     border: 5px solid #6e0d8e;
+    border-radius: 10px;
     margin: 15px 10px; }
     .contenedorRecetas .tituloRecetas {
       color: red;
       padding: 10px; }
     .contenedorRecetas .cajaRecetas {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column; }
+      .contenedorRecetas .cajaRecetas .boxPlatos {
+        background-color: #df93df;
+        border-radius: 10px;
+        margin: 10px; } }
 
 @media (min-width: 768px) {
   .contenedorFotos .fotoPrincipal {
@@ -186,7 +192,10 @@ p {
     .tituloPrincipal.tituloPrincipal:hover {
       transform: scale(1.2);
       background-color: #be3494;
-      border: 15px solid #6b046b; }
+      border: 15px solid #9f079f; }
+    .tituloPrincipal h1 {
+      font-weight: 700;
+      font-size: 50px; }
   .publicidadPadre {
     margin: 20px; }
     .publicidadPadre .boxHijo {
@@ -296,3 +305,40 @@ p {
     .seccionFabricacion .contenedorVideo .videoFabricacion {
       width: 650px;
       height: 520px; } }
+
+@media (min-width: 480px) {
+  .tituloFormulario {
+    text-align: center;
+    color: #fd0000;
+    padding: 10px; }
+  .contenedorForm {
+    margin: 20px; }
+    .contenedorForm form {
+      background-color: #e4e460;
+      padding: 30px;
+      border-radius: 10px;
+      margin: 30px; } }
+
+@media (min-width: 768px) {
+  .contenedorForm form {
+    text-align: left;
+    padding: 10px 30px;
+    margin: 20px 20px; } }
+
+@media (min-width: 1024px) {
+  .contenedorForm form {
+    padding: 30px 60px;
+    margin: 30px 60px; } }
+
+@media (min-width: 480px) {
+  .contenedorArticulo {
+    background-color: #df93df;
+    padding: 30px;
+    border: 4px groove #a609da;
+    border-radius: 10px;
+    margin: 15px; } }
+
+@media (min-width: 768px) {
+  .contenedorArticulo {
+    padding: 15px;
+    margin: 30px; } }
