@@ -34,12 +34,17 @@ footer{
 }
 figcaption{
     text-align: center;
-    background-color: rgb(219, 110, 243);
+    background-color: rgb(196, 9, 237);
 }
 figure{
     display: inline-block;
     background-color: white;
+    border-radius: 8px;
     margin: auto;
+
+    img{
+        border-radius: 8px;
+    }
 }
 h2{
     padding: 10px 0px 15px 30px;

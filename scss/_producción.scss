@@ -1,0 +1,90 @@
+@media (min-width:480px){
+    .contenedorListado{
+        background-color:#D65DB1;
+        padding: 20px;
+        border-radius: 8px;
+        border: 6px ridge rgb(173, 0, 173);
+        margin: 20px;
+        
+        .listadoPasos{
+            text-align: left;
+        }
+    }
+
+    .seccionFabricacion{
+        background-color:#D65DB1;
+        padding: 10px;
+        border-radius: 8px;
+        border: 6px ridge rgb(173, 0, 173);
+        margin: 20px 20px;
+
+        .imagenFabricación{
+            height: 300px;
+            width: 400px;
+        }
+
+        .contenedorVideo{
+            display: inline-block;
+            border: 8px ridge rgb(166, 9, 218);
+            border-radius: 8px;
+            margin: auto;
+
+            .videoFabricacion{
+                width: 450px;
+                height: 300px;
+            }
+        }
+    }
+
+}
+@media (min-width:768px){
+    .contenedorListado{
+
+        .listadoPasos{
+            ol li{
+                margin-left: 15px;
+            }  
+
+        }
+    }
+
+    .seccionFabricacion{
+        padding: 20px;
+        margin: 25px 20px;
+
+        .imagenFabricación{
+            width: 480px;
+            height: 320px;
+        }
+        
+        .contenedorVideo{
+
+            .videoFabricacion{
+                width: 580px;
+                height: 450px;
+            }
+
+        }
+    }
+        
+}
+@media (min-width:1024px){
+    .seccionFabricacion{
+        padding: 30px;
+        margin: 50px 50px;
+
+        .imagenFabricación{
+            width: 500px;
+            height: 350px;
+        }
+
+        .contenedorVideo{
+
+            .videoFabricacion{
+                width: 650px;
+                height: 520px;
+            }
+        }
+    }
+
+}
