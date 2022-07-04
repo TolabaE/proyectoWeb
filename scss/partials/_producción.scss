@@ -1,9 +1,9 @@
 @media (min-width:480px){
     .contenedorListado{
-        background-color:#D65DB1;
+        background-color:$paleta-color-dos;
         padding: 20px;
         border-radius: 8px;
-        border: 6px ridge rgb(173, 0, 173);
+        border: 6px ridge $paleta-color-cinco;
         margin: 20px;
         
         .listadoPasos{
@@ -12,10 +12,10 @@
     }
 
     .seccionFabricacion{
-        background-color:#D65DB1;
+        background-color:$paleta-color-dos;
         padding: 10px;
         border-radius: 8px;
-        border: 6px ridge rgb(173, 0, 173);
+        border: 6px ridge $paleta-color-cinco;
         margin: 20px 20px;
 
         .imagenFabricación{
@@ -25,7 +25,7 @@
 
         .contenedorVideo{
             display: inline-block;
-            border: 8px ridge rgb(166, 9, 218);
+            border: 8px ridge $paleta-color-cinco;
             border-radius: 8px;
             margin: auto;
 
@@ -35,7 +35,6 @@
             }
         }
     }
-
 }
 @media (min-width:768px){
     .contenedorListado{
@@ -44,7 +43,6 @@
             ol li{
                 margin-left: 15px;
             }  
-
         }
     }
 
@@ -63,10 +61,8 @@
                 width: 580px;
                 height: 450px;
             }
-
         }
-    }
-        
+    }        
 }
 @media (min-width:1024px){
     .seccionFabricacion{
@@ -74,6 +70,7 @@
         margin: 50px 50px;
 
         .imagenFabricación{
+            justify-items: center;
             width: 500px;
             height: 350px;
         }
@@ -86,5 +83,4 @@
             }
         }
     }
-
 }

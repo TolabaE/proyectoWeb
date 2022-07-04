@@ -1,10 +1,12 @@
+
+@import "var/variables";
 @import "generales";
 @import "grids";
-@import "inicio";
-@import "productos";
-@import "producción";
-@import "pedidos";
-@import "historia";
+@import "partials/inicio";
+@import "partials/productos";
+@import "partials/producción";
+@import "partials/pedidos";
+@import "partials/historia";
 
 
 

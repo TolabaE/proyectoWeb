@@ -7,21 +7,22 @@
 body{
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
-    background-color:#FF9671;
+    background-color:$paleta-color-tres;
 }
 a{
     border-radius: 8px;
 }
 header{
     text-transform: uppercase;
+    box-shadow: 0px 0px 15px 0px rgb(22, 22, 21);
     .colorNav{
-        background-color:#845EC2;
+        background-color: $paleta-color-uno;
 
         div ul li{
             padding: 8px 25px;
             border-radius: 6px;
             & a:hover{
-                background-color: rgb(223, 147, 223);
+                background-color: $paleta-color-dos;
                 border-radius: 8px;
                 padding: 8px 12px;
             }             
@@ -30,15 +31,15 @@ header{
     }
 }
 footer{
-    background-color:#845EC2;
+    background-color:$paleta-color-uno;
 }
 figcaption{
     text-align: center;
-    background-color: rgb(196, 9, 237);
+    background-color: $paleta-color-uno;
 }
 figure{
     display: inline-block;
-    background-color: white;
+    background-color:$paleta-color-dos;
     border-radius: 8px;
     margin: auto;
 
@@ -53,7 +54,7 @@ p{
     padding: 10px 0px 10px 20px;
 }
 .contenedorTitulo{
-    background-color:#D65DB1;
+    background-color: $paleta-color-cuatro;
     color: white;
     padding: 10px;
 }
@@ -64,21 +65,20 @@ p{
     body{
         text-align: center;
     }
+    header{
+        position: sticky;
+        top: 0px;
+    }
     footer{
         display: flex;
         flex-direction:column-reverse;
         justify-content:space-around;
         padding: 15px;
     }
-
 }
 @media (min-width:1024px){
     body{
         text-align:left;
-    }
-    header{
-        position: sticky;
-        top: 0px;
     }
     footer{
         display: flex;
@@ -90,5 +90,4 @@ p{
         text-align: center;
         padding: 20px;
     }
-
 }

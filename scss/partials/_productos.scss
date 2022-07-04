@@ -1,6 +1,9 @@
 @media (min-width:480px){
     .contenedorSubtitulo{
-        color: red;
+        h2{
+            font-weight: 700;
+            color: red;
+        }
     }
 
     .contenedorPadre{
@@ -9,18 +12,20 @@
         justify-content:space-evenly;
 
         .contenedorProductos{
-            background-color:#FF9671;
+            background-color:$paleta-color-uno;
             transition: all 1s;
             padding: 20px 25px;
             border-radius: 10px;
             margin: auto;
-            margin-bottom: 20px;
+            margin-top: 10px;
+            margin-bottom: 40px;
             &.contenedorProductos:hover{
                 background-color:orangered ;
                 padding: 20px 25px;
                 border-radius: 10px;
                 margin: auto;
-                margin-bottom: 20px;
+                margin-top: 10px;
+                margin-bottom: 40px;
             }
 
             .imgProductos{
@@ -53,9 +58,10 @@
 }
 @media (min-width:1024px){
     .contenedorSubtitulo{
+        text-align: center;
         padding:30px 10px;
         &.contenedorSubtitulo h2:hover{
-            font-weight: 600;
+            font-weight: 800;
         }
     }
     
@@ -71,8 +77,6 @@
             .listaProductos{
                 padding-top: 10px;
             }
-
         }
     }
-
 }

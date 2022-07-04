@@ -1,18 +1,18 @@
 @media (min-width:480px){
     .tituloPrincipal{
         grid-area: titulo;
-        color: red;
+        color:red;
         font-size: 2em;
-        background-color: #D65DB1;
+        background-color:$paleta-color-dos;
         padding: 20px;
-        border: 15px solid #be3494;
+        border: 15px solid $paleta-color-cuatro;
         text-shadow: 5px 5px 6px rgb(10, 1, 1);
     }
     .publicidadPadre{
         display: flex;
         flex-direction:column;
-        background-color:#D65DB1;
-        border: 5px solid rgb(110, 13, 142);
+        background-color:$paleta-color-dos;
+        border: 5px solid $paleta-color-cinco;
         border-radius: 10px;
         padding: 10px;
         margin: 10px;
@@ -28,12 +28,11 @@
             margin: 10px;
 
             .publicidad{
-                background-color:rgb(223, 147, 223);
+                background-color:$paleta-color-tres;
                 padding: 10px;
                 border-radius: 6px;
                 margin: 10px;
             }
-
         }
     }
     .contenedorFotos{
@@ -45,9 +44,9 @@
     .contenedorRecetas{
         display: flex;
         flex-direction: column;
-        background-color:#D65DB1;
+        background-color:$paleta-color-dos;
         padding: 20px;
-        border: 5px solid rgb(110, 13, 142);
+        border: 5px solid $paleta-color-cinco;
         border-radius: 10px;
         margin:15px 10px;
 
@@ -61,13 +60,12 @@
             flex-direction: column;
 
             .boxPlatos{
-                background-color:rgb(223, 147, 223);
+                background-color:$paleta-color-tres;
                 border-radius: 10px;
                 margin: 10px;
             }
         }
-    }
-    
+    } 
 }
 @media (min-width:768px){
     .contenedorFotos{
@@ -94,8 +92,8 @@
         transition: all 1s;
         &.tituloPrincipal:hover{
             transform: scale(1.2);
-            background-color:#be3494 ;
-            border:15px solid rgb(159, 7, 159);
+            background-color:$paleta-color-dos ;
+            border:15px solid $paleta-color-cuatro;
         }
         h1{
             font-weight: 700;
@@ -109,7 +107,6 @@
             flex-direction: column;
             justify-content: space-evenly;
         }
-
     }
 
     .contenedorFotos{
@@ -119,9 +116,14 @@
         }
     }
 
-    .boxPlatos{
-        margin: 30px;
-        padding: 10px;
-    }
+    .contenedorRecetas{
 
+        .cajaRecetas{
+
+            .boxPlatos{
+                margin: 20px 40px;
+                padding: 10px;
+            }
+        }
+    }
 }

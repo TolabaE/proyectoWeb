@@ -7,33 +7,34 @@
 body {
   font-family: 'Roboto', sans-serif;
   min-height: 100vh;
-  background-color: #FF9671; }
+  background-color: #eae2b7; }
 
 a {
   border-radius: 8px; }
 
 header {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  box-shadow: 0px 0px 15px 0px #161615; }
   header .colorNav {
-    background-color: #845EC2; }
+    background-color: #f77f00; }
     header .colorNav div ul li {
       padding: 8px 25px;
       border-radius: 6px; }
       header .colorNav div ul li a:hover {
-        background-color: #df93df;
+        background-color: #fcbf49;
         border-radius: 8px;
         padding: 8px 12px; }
 
 footer {
-  background-color: #845EC2; }
+  background-color: #f77f00; }
 
 figcaption {
   text-align: center;
-  background-color: #c409ed; }
+  background-color: #f77f00; }
 
 figure {
   display: inline-block;
-  background-color: white;
+  background-color: #fcbf49;
   border-radius: 8px;
   margin: auto; }
   figure img {
@@ -46,7 +47,7 @@ p {
   padding: 10px 0px 10px 20px; }
 
 .contenedorTitulo {
-  background-color: #D65DB1;
+  background-color: #d62828;
   color: white;
   padding: 10px; }
 
@@ -56,6 +57,9 @@ p {
 @media (min-width: 480px) {
   body {
     text-align: center; }
+  header {
+    position: sticky;
+    top: 0px; }
   footer {
     display: flex;
     flex-direction: column-reverse;
@@ -65,9 +69,6 @@ p {
 @media (min-width: 1024px) {
   body {
     text-align: left; }
-  header {
-    position: sticky;
-    top: 0px; }
   footer {
     display: flex;
     flex-direction: row;
@@ -127,15 +128,15 @@ p {
     grid-area: titulo;
     color: red;
     font-size: 2em;
-    background-color: #D65DB1;
+    background-color: #fcbf49;
     padding: 20px;
-    border: 15px solid #be3494;
+    border: 15px solid #d62828;
     text-shadow: 5px 5px 6px #0a0101; }
   .publicidadPadre {
     display: flex;
     flex-direction: column;
-    background-color: #D65DB1;
-    border: 5px solid #6e0d8e;
+    background-color: #fcbf49;
+    border: 5px solid #003049;
     border-radius: 10px;
     padding: 10px;
     margin: 10px; }
@@ -148,7 +149,7 @@ p {
       justify-content: space-evenly;
       margin: 10px; }
       .publicidadPadre .boxHijo .publicidad {
-        background-color: #df93df;
+        background-color: #eae2b7;
         padding: 10px;
         border-radius: 6px;
         margin: 10px; }
@@ -158,9 +159,9 @@ p {
   .contenedorRecetas {
     display: flex;
     flex-direction: column;
-    background-color: #D65DB1;
+    background-color: #fcbf49;
     padding: 20px;
-    border: 5px solid #6e0d8e;
+    border: 5px solid #003049;
     border-radius: 10px;
     margin: 15px 10px; }
     .contenedorRecetas .tituloRecetas {
@@ -170,7 +171,7 @@ p {
       display: flex;
       flex-direction: column; }
       .contenedorRecetas .cajaRecetas .boxPlatos {
-        background-color: #df93df;
+        background-color: #eae2b7;
         border-radius: 10px;
         margin: 10px; } }
 
@@ -191,8 +192,8 @@ p {
     transition: all 1s; }
     .tituloPrincipal.tituloPrincipal:hover {
       transform: scale(1.2);
-      background-color: #be3494;
-      border: 15px solid #9f079f; }
+      background-color: #fcbf49;
+      border: 15px solid #d62828; }
     .tituloPrincipal h1 {
       font-weight: 700;
       font-size: 50px; }
@@ -204,30 +205,33 @@ p {
   .contenedorFotos .fotoPrincipal {
     width: 800px;
     height: 800px; }
-  .boxPlatos {
-    margin: 30px;
+  .contenedorRecetas .cajaRecetas .boxPlatos {
+    margin: 20px 40px;
     padding: 10px; } }
 
 @media (min-width: 480px) {
-  .contenedorSubtitulo {
+  .contenedorSubtitulo h2 {
+    font-weight: 700;
     color: red; }
   .contenedorPadre {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly; }
     .contenedorPadre .contenedorProductos {
-      background-color: #FF9671;
+      background-color: #f77f00;
       transition: all 1s;
       padding: 20px 25px;
       border-radius: 10px;
       margin: auto;
-      margin-bottom: 20px; }
+      margin-top: 10px;
+      margin-bottom: 40px; }
       .contenedorPadre .contenedorProductos.contenedorProductos:hover {
         background-color: orangered;
         padding: 20px 25px;
         border-radius: 10px;
         margin: auto;
-        margin-bottom: 20px; }
+        margin-top: 10px;
+        margin-bottom: 40px; }
       .contenedorPadre .contenedorProductos .imgProductos {
         width: 420px;
         height: 420px; }
@@ -246,9 +250,10 @@ p {
 
 @media (min-width: 1024px) {
   .contenedorSubtitulo {
+    text-align: center;
     padding: 30px 10px; }
     .contenedorSubtitulo.contenedorSubtitulo h2:hover {
-      font-weight: 600; }
+      font-weight: 800; }
   .contenedorPadre .contenedorProductos .imgProductos {
     width: 315px;
     height: 310px; }
@@ -257,25 +262,25 @@ p {
 
 @media (min-width: 480px) {
   .contenedorListado {
-    background-color: #D65DB1;
+    background-color: #fcbf49;
     padding: 20px;
     border-radius: 8px;
-    border: 6px ridge #ad00ad;
+    border: 6px ridge #003049;
     margin: 20px; }
     .contenedorListado .listadoPasos {
       text-align: left; }
   .seccionFabricacion {
-    background-color: #D65DB1;
+    background-color: #fcbf49;
     padding: 10px;
     border-radius: 8px;
-    border: 6px ridge #ad00ad;
+    border: 6px ridge #003049;
     margin: 20px 20px; }
     .seccionFabricacion .imagenFabricación {
       height: 300px;
       width: 400px; }
     .seccionFabricacion .contenedorVideo {
       display: inline-block;
-      border: 8px ridge #a609da;
+      border: 8px ridge #003049;
       border-radius: 8px;
       margin: auto; }
       .seccionFabricacion .contenedorVideo .videoFabricacion {
@@ -300,6 +305,7 @@ p {
     padding: 30px;
     margin: 50px 50px; }
     .seccionFabricacion .imagenFabricación {
+      justify-items: center;
       width: 500px;
       height: 350px; }
     .seccionFabricacion .contenedorVideo .videoFabricacion {
@@ -314,7 +320,7 @@ p {
   .contenedorForm {
     margin: 20px; }
     .contenedorForm form {
-      background-color: #e4e460;
+      background-color: #fcbf49;
       padding: 30px;
       border-radius: 10px;
       margin: 30px; } }
@@ -332,9 +338,9 @@ p {
 
 @media (min-width: 480px) {
   .contenedorArticulo {
-    background-color: #df93df;
+    background-color: #fcbf49;
     padding: 30px;
-    border: 4px groove #a609da;
+    border: 6px groove #003049;
     border-radius: 10px;
     margin: 15px; } }
 
