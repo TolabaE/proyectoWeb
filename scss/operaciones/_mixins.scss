@@ -1,8 +1,0 @@
-@mixin sizes ($withd,$height) {
-    width: $withd;
-    height: $height;
-}
-.mixins-subtitulo{
-    @include sizes(500px,50xp );
-    background-color: orange;
-}

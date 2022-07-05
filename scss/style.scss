@@ -1,15 +1,13 @@
 
 @import "var/variables";
-@import "generales";
-@import "grids";
+@import "partials/generales";
+@import "partials/grids";
 @import "partials/inicio";
 @import "partials/productos";
 @import "partials/producción";
 @import "partials/pedidos";
 @import "partials/historia";
-@import "operaciones/maps";
-@import "operaciones/extend";
-@import "operaciones/mixins";
+
 
 
 

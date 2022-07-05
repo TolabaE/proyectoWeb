@@ -150,6 +150,7 @@ p {
       justify-content: space-evenly;
       margin: 10px; }
       .publicidadPadre .boxHijo .publicidad {
+        background-color: #eae2b7;
         padding: 10px;
         border-radius: 6px;
         margin: 10px; }
@@ -348,27 +349,3 @@ p {
   .contenedorArticulo {
     padding: 15px;
     margin: 30px; } }
-
-.maps-hotel {
-  background-color: #f41d1d; }
-
-.maps-taller {
-  background-color: #2424f4; }
-
-.maps-comedor {
-  background-color: #0bb60b; }
-
-.boxIntroduccion, .secciónPadre {
-  color: #f7eeee;
-  background-color: orangered;
-  border-radius: 10px;
-  border: 8px solid red;
-  margin: 10px 15px; }
-
-.secciónPadre {
-  font-family: Arial, Helvetica, sans-serif; }
-
-.mixins-subtitulo {
-  width: 500px;
-  height: 50xp;
-  background-color: orange; }
