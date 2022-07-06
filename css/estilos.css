@@ -45,7 +45,8 @@ h2 {
   padding: 10px 0px 15px 30px; }
 
 p {
-  padding: 10px 0px 10px 20px; }
+  padding: 10px 0px;
+  text-align: justify; }
 
 .contenedorTitulo {
   background-color: #d62828;
@@ -153,7 +154,9 @@ p {
         background-color: #eae2b7;
         padding: 10px;
         border-radius: 6px;
-        margin: 10px; }
+        margin: 10px 5px; }
+  .secciónPadre {
+    padding: 10px; }
   .contenedorFotos .fotoPrincipal {
     width: 300px;
     height: 320px; }
@@ -173,8 +176,9 @@ p {
       flex-direction: column; }
       .contenedorRecetas .cajaRecetas .boxPlatos {
         background-color: #eae2b7;
+        padding: 10px;
         border-radius: 10px;
-        margin: 10px; } }
+        margin: 10px 5px; } }
 
 @media (min-width: 768px) {
   .contenedorFotos .fotoPrincipal {
@@ -207,7 +211,7 @@ p {
     width: 800px;
     height: 800px; }
   .contenedorRecetas .cajaRecetas .boxPlatos {
-    margin: 20px 40px;
+    margin: 20px 10px;
     padding: 10px; } }
 
 @media (min-width: 320px) {
@@ -281,7 +285,6 @@ p {
       width: 300px; }
     .seccionFabricacion .contenedorVideo {
       display: inline-block;
-      border: 8px ridge #003049;
       border-radius: 8px;
       margin: auto; }
       .seccionFabricacion .contenedorVideo .videoFabricacion {
