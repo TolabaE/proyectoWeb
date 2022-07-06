@@ -1,4 +1,4 @@
-@media (min-width:480px){
+@media (min-width:320px){
     .contenedorListado{
         background-color:$paleta-color-dos;
         padding: 20px;
@@ -19,8 +19,8 @@
         margin: 20px 20px;
 
         .imagenFabricación{
-            height: 300px;
-            width: 400px;
+            height: 260px;
+            width: 300px;
         }
 
         .contenedorVideo{
@@ -30,8 +30,8 @@
             margin: auto;
 
             .videoFabricacion{
-                width: 450px;
-                height: 300px;
+                width: 300px;
+                height: 280px;
             }
         }
     }

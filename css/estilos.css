@@ -55,7 +55,7 @@ p {
 .anchorLink {
   color: red; }
 
-@media (min-width: 480px) {
+@media (min-width: 320px) {
   body {
     text-align: center; }
   header {
@@ -107,7 +107,7 @@ p {
   display: grid;
   grid-template-areas: "navegación" "titulo" "introducción" "pictures" "subtitulo" "articulo" "footer"; }
 
-@media (min-width: 480px) {
+@media (min-width: 320px) {
   #grilla {
     gap: 5px;
     grid-template-areas: "navegación" "titulo" "introducción" "pictures" "subtitulo" "articulo" "publicidad" "footer";
@@ -124,7 +124,7 @@ p {
     grid-template-areas: "navegación navegación" "titulo titulo" "introducción introducción" "pictures pictures" "subtitulo subtitulo" "articulo publicidad" "footer footer";
     grid-template-columns: 5fr 2fr; } }
 
-@media (min-width: 480px) {
+@media (min-width: 320px) {
   .tituloPrincipal {
     grid-area: titulo;
     color: red;
@@ -155,8 +155,8 @@ p {
         border-radius: 6px;
         margin: 10px; }
   .contenedorFotos .fotoPrincipal {
-    width: 450px;
-    height: 450px; }
+    width: 300px;
+    height: 320px; }
   .contenedorRecetas {
     display: flex;
     flex-direction: column;
@@ -210,7 +210,7 @@ p {
     margin: 20px 40px;
     padding: 10px; } }
 
-@media (min-width: 480px) {
+@media (min-width: 320px) {
   .contenedorSubtitulo h2 {
     font-weight: 700;
     color: red; }
@@ -234,8 +234,8 @@ p {
         margin-top: 10px;
         margin-bottom: 40px; }
       .contenedorPadre .contenedorProductos .imgProductos {
-        width: 420px;
-        height: 420px; }
+        width: 300px;
+        height: 300px; }
       .contenedorPadre .contenedorProductos .listaProductos {
         text-align: left;
         margin-left: 5px; } }
@@ -261,7 +261,7 @@ p {
   .contenedorPadre .contenedorProductos .listaProductos {
     padding-top: 10px; } }
 
-@media (min-width: 480px) {
+@media (min-width: 320px) {
   .contenedorListado {
     background-color: #fcbf49;
     padding: 20px;
@@ -277,16 +277,16 @@ p {
     border: 6px ridge #003049;
     margin: 20px 20px; }
     .seccionFabricacion .imagenFabricación {
-      height: 300px;
-      width: 400px; }
+      height: 260px;
+      width: 300px; }
     .seccionFabricacion .contenedorVideo {
       display: inline-block;
       border: 8px ridge #003049;
       border-radius: 8px;
       margin: auto; }
       .seccionFabricacion .contenedorVideo .videoFabricacion {
-        width: 450px;
-        height: 300px; } }
+        width: 300px;
+        height: 280px; } }
 
 @media (min-width: 768px) {
   .contenedorListado .listadoPasos ol li {
@@ -313,7 +313,7 @@ p {
       width: 650px;
       height: 520px; } }
 
-@media (min-width: 480px) {
+@media (min-width: 320px) {
   .tituloFormulario {
     text-align: center;
     color: #fd0000;
@@ -337,7 +337,7 @@ p {
     padding: 30px 60px;
     margin: 30px 60px; } }
 
-@media (min-width: 480px) {
+@media (min-width: 320px) {
   .contenedorArticulo {
     background-color: #fcbf49;
     padding: 30px;
