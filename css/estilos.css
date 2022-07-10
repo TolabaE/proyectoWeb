@@ -62,6 +62,8 @@ p {
   header {
     position: sticky;
     top: 0px; }
+    header .colorNav div ul li {
+      text-align: left; }
   footer {
     display: flex;
     flex-direction: column-reverse;
@@ -132,7 +134,6 @@ p {
     font-size: 2em;
     background-color: #fcbf49;
     padding: 20px;
-    border: 15px solid #d62828;
     text-shadow: 5px 5px 6px #0a0101; }
   .publicidadPadre {
     display: flex;
@@ -197,8 +198,7 @@ p {
     transition: all 1s; }
     .tituloPrincipal.tituloPrincipal:hover {
       transform: scale(1.2);
-      background-color: #fcbf49;
-      border: 15px solid #d62828; }
+      background-color: #fcbf49; }
     .tituloPrincipal h1 {
       font-weight: 700;
       font-size: 50px; }
@@ -207,12 +207,19 @@ p {
     .publicidadPadre .boxHijo {
       flex-direction: column;
       justify-content: space-evenly; }
+      .publicidadPadre .boxHijo .publicidad {
+        transition: all 1s; }
+        .publicidadPadre .boxHijo .publicidad.publicidad:hover {
+          background-color: #f77f00; }
   .contenedorFotos .fotoPrincipal {
     width: 800px;
     height: 800px; }
   .contenedorRecetas .cajaRecetas .boxPlatos {
     margin: 20px 10px;
-    padding: 10px; } }
+    padding: 10px;
+    transition: all 1s; }
+    .contenedorRecetas .cajaRecetas .boxPlatos.boxPlatos:hover {
+      background-color: #f77f00; } }
 
 @media (min-width: 320px) {
   .contenedorSubtitulo h2 {
@@ -220,8 +227,9 @@ p {
     color: red; }
   .contenedorPadre {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; }
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: stretch; }
     .contenedorPadre .contenedorProductos {
       background-color: #f77f00;
       transition: all 1s;
@@ -230,16 +238,9 @@ p {
       margin: auto;
       margin-top: 10px;
       margin-bottom: 40px; }
-      .contenedorPadre .contenedorProductos.contenedorProductos:hover {
-        background-color: orangered;
-        padding: 20px 25px;
-        border-radius: 10px;
-        margin: auto;
-        margin-top: 10px;
-        margin-bottom: 40px; }
       .contenedorPadre .contenedorProductos .imgProductos {
-        width: 300px;
-        height: 300px; }
+        width: 250px;
+        height: 250px; }
       .contenedorPadre .contenedorProductos .listaProductos {
         text-align: left;
         margin-left: 5px; } }
@@ -250,8 +251,8 @@ p {
     flex-wrap: wrap;
     justify-content: stretch; }
     .contenedorPadre .contenedorProductos .imgProductos {
-      width: 320px;
-      height: 320px; } }
+      width: 300px;
+      height: 300px; } }
 
 @media (min-width: 1024px) {
   .contenedorSubtitulo {
@@ -259,11 +260,26 @@ p {
     padding: 30px 10px; }
     .contenedorSubtitulo.contenedorSubtitulo h2:hover {
       font-weight: 800; }
-  .contenedorPadre .contenedorProductos .imgProductos {
-    width: 315px;
-    height: 310px; }
-  .contenedorPadre .contenedorProductos .listaProductos {
-    padding-top: 10px; } }
+  .contenedorPadre .contenedorProductos {
+    background-color: #f77f00;
+    transition: all 1s;
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 40px; }
+    .contenedorPadre .contenedorProductos.contenedorProductos:hover {
+      background-color: #d62828;
+      padding: 15px 25px;
+      border-radius: 10px;
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 40px; }
+    .contenedorPadre .contenedorProductos .imgProductos {
+      width: 310px;
+      height: 310px; }
+    .contenedorPadre .contenedorProductos .listaProductos {
+      padding-top: 10px; } }
 
 @media (min-width: 320px) {
   .contenedorListado {

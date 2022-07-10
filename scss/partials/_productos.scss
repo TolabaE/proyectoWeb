@@ -8,8 +8,9 @@
 
     .contenedorPadre{
         display: flex;
-        flex-direction: column;
-        justify-content:space-evenly;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content:stretch;
 
         .contenedorProductos{
             background-color:$paleta-color-uno;
@@ -19,24 +20,16 @@
             margin: auto;
             margin-top: 10px;
             margin-bottom: 40px;
-            &.contenedorProductos:hover{
-                background-color:orangered ;
-                padding: 20px 25px;
-                border-radius: 10px;
-                margin: auto;
-                margin-top: 10px;
-                margin-bottom: 40px;
-            }
 
             .imgProductos{
-                width: 300px;
-                height: 300px;
+                width: 250px;
+                height: 250px;
             }
 
             .listaProductos{
                 text-align: left;
                 margin-left: 5px;
-            }
+            }    
         }
     }
 }
@@ -49,8 +42,8 @@
         .contenedorProductos{
 
             .imgProductos{
-                width: 320px;
-                height: 320px;
+                width: 300px;
+                height: 300px;
             }
 
         }
@@ -68,15 +61,30 @@
     .contenedorPadre{
 
         .contenedorProductos{
+            background-color:$paleta-color-uno;
+            transition: all 1s;
+            padding: 15px 25px;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            &.contenedorProductos:hover{
+                background-color:$paleta-color-cuatro ;
+                padding: 15px 25px;
+                border-radius: 10px;
+                margin: auto;
+                margin-top: 10px;
+                margin-bottom: 40px;
+            }
 
             .imgProductos{
-                width: 315px;
+                width: 310px;
                 height: 310px;
             }
     
             .listaProductos{
                 padding-top: 10px;
-            }
+            }    
         }
     }
 }

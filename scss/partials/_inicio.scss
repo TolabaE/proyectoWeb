@@ -5,7 +5,6 @@
         font-size: 2em;
         background-color:$paleta-color-dos;
         padding: 20px;
-        border: 15px solid $paleta-color-cuatro;
         text-shadow: 5px 5px 6px rgb(10, 1, 1);
     }
     .publicidadPadre{
@@ -97,7 +96,6 @@
         &.tituloPrincipal:hover{
             transform: scale(1.2);
             background-color:$paleta-color-dos ;
-            border:15px solid $paleta-color-cuatro;
         }
         h1{
             font-weight: 700;
@@ -110,6 +108,13 @@
         .boxHijo{
             flex-direction: column;
             justify-content: space-evenly;
+
+            .publicidad{
+                transition: all 1s;
+                &.publicidad:hover{
+                    background-color: $paleta-color-uno;
+                }
+            }
         }
     }
 
@@ -127,6 +132,10 @@
             .boxPlatos{
                 margin: 20px 10px;
                 padding: 10px;
+                transition: all 1s;
+                &.boxPlatos:hover{
+                    background-color: $paleta-color-uno;
+                }
             }
         }
     }
