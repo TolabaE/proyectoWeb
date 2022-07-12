@@ -76,7 +76,7 @@ p {
   footer {
     display: flex;
     flex-direction: row;
-    padding: 30px;
+    padding: 10px 30px;
     justify-content: space-between; }
   .contenedorTitulo {
     text-align: center;
@@ -336,25 +336,29 @@ p {
   .tituloFormulario {
     text-align: center;
     color: #fd0000;
-    padding: 10px; }
+    padding: 0px 20px; }
   .contenedorForm {
-    margin: 20px; }
+    text-align: left;
+    padding-bottom: 30px; }
     .contenedorForm form {
       background-color: #fcbf49;
-      padding: 30px;
+      padding: 20px;
       border-radius: 10px;
-      margin: 30px; } }
+      margin-left: 5%;
+      margin-right: 5%; } }
 
 @media (min-width: 768px) {
   .contenedorForm form {
-    text-align: left;
-    padding: 10px 30px;
-    margin: 20px 20px; } }
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px 40px; } }
 
 @media (min-width: 1024px) {
   .contenedorForm form {
-    padding: 30px 60px;
-    margin: 30px 60px; } }
+    padding: 30px;
+    padding-left: 130px;
+    margin-left: 20%;
+    margin-right: 20%; } }
 
 @media (min-width: 320px) {
   .contenedorArticulo {

@@ -2,17 +2,19 @@
     .tituloFormulario{
         text-align: center;
         color: rgb(253, 0, 0);
-        padding: 10px;
+        padding: 0px 20px;
     }
 
     .contenedorForm{
-        margin:20px;
+        text-align: left;
+        padding-bottom: 30px;
 
         form{
             background-color: $paleta-color-dos;
-            padding: 30px;
+            padding: 20px;
             border-radius: 10px;
-            margin: 30px;
+            margin-left: 5%;
+            margin-right: 5%;
         }
     }
 }
@@ -20,9 +22,9 @@
     .contenedorForm{
 
         form{
-            text-align: left;
-            padding: 10px 30px;
-            margin: 20px 20px;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding: 20px 40px;
         }
     }
 }
@@ -30,8 +32,10 @@
     .contenedorForm{
 
         form{
-            padding: 30px 60px;
-            margin: 30px 60px;
+            padding: 30px;
+            padding-left: 130px;
+            margin-left: 20%;
+            margin-right: 20%;
         }  
     }
 }  

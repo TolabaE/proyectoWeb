@@ -53,31 +53,24 @@
         <h2>¡Tu pedido casi esta en camino!</h2>
     </div>
     <section class="contenedorForm">
-        <form class="row g-3">
-            <div class="col-md-4">
-                <label for="validationDefault01" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="validationDefault01" required>
+        <form action="">
+            <div>
+                <p>Nombre y Apellido:</p>
+                <input type="text" placeholder="Nombre completo">
             </div>
-            <div class="col-md-4">
-                <label for="validationDefault02" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="validationDefault02" required>
+            <label for="gmail">Ingrese su gmail:
+                <input type="gmail" placeholder="example@gmail.com" name="gmail">
+            </label>
+            <div>
+                <p>
+                    Ingrese su Edad:
+                </p>
             </div>
-            <div class="col-md-4">
-                <label for="validationDefaultUsername" class="form-label">Correo</label>
-                <div class="input-group">
-                    <span class="input-group-text" id="inputGroupPrepend2">@email</span>
-                    <input type="text" class="form-control" id="validationDefaultUsername"
-                        aria-describedby="inputGroupPrepend2" required>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <label for="validationDefault03" class="form-label">Ciudad/Pais</label>
-                <input type="text" class="form-control" id="validationDefault03" value="Argentina" required>
-            </div>
-            <div class="col-md-3">
-                <label for="validationDefault04" class="form-label">Estado/Provincia</label>
-                <select class="form-select" id="validationDefault04" required>
-                    <option selected disabled value="">Seleccione</option>
+            <input type="number" placeholder="Edad">
+            <div>
+                <p>Estado/Provincia</p>
+                <select name="provincias">
+                    <option value="">Seleccione</option>
                     <option>Buenos Aires</option>
                     <option>CABA</option>
                     <option>Catamarca</option>
@@ -102,63 +95,57 @@
                     <option>Tierra del Fuego</option>
                     <option>Tucuman</option>
                 </select>
+                <p>Barrio/departamento</p>
+                <input type="text">
+                <p>Calle/Avenida</p>
+                <input type="text">
+                <p>Numero</p>
+                <input type="number">
             </div>
-            <div class="col-md-3">
-                <label for="validationDefault05" class="form-label">Departamento</label>
-                <input type="text" class="form-control" id="validationDefault05" required>
+            <label for="text">Piso(opcional)
+                <input type="text" name="text">
+            </label>
+            <div>
+                <p>seleccione el producto:</p>
+                <select name="productos">
+                    <option value="Pimenton">Pimentón Dulce</option>
+                    <option value="Aji">Aji Molido</option>
+                    <option value="Oregano">Oregano</option>
+                    <option value="Comino">Comino</option>
+                    <option value="Apio">Apio Molido</option>
+                    <option value="Pimienta">Pimienta Blanca</option>
+                </select>
+                <label for="number">Cantidad:
+                    <input type="number" placeholder="Ingrese cantidad" name="number">
+                </label>
             </div>
-            <div class="col-md-3">
-                <label for="validationDefault05" class="form-label">Dirección</label>
-                <input type="text" class="form-control" id="validationDefault05" required>
-            </div>
-            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                <option selected>Seleccione un producto</option>
-                <option value="Pimenton">Pimentón Dulce</option>
-                <option value="Aji">Aji Molido</option>
-                <option value="Oregano">Oregano</option>
-                <option value="Comino">Comino</option>
-                <option value="Apio">Apio Molido</option>
-                <option value="Pimienta">Pimienta Blanca</option>
-            </select>
-            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                <option selected>Elija la cantidad</option>
-                <option value="1">Uno</option>
-                <option value="2">Dos</option>
-                <option value="3">Tres</option>
-                <option value="4">Cuatro</option>
-            </select>
             <div>
                 <p>Seleccione un metodo de pago:</p>
-                <div>Efectivo
+                <div>efectivo
                     <input type="radio" name="metodo" value="efectivo">
                 </div>
-                <div>Tarjeta
+                <div>tarjeta
                     <input type="radio" name="metodo" value="tarjeta">
                     <label for="number">Ingrese tarjeta:
                         <input type="number" placeholder="0000-0000-0000-0000" name="number">
                     </label>
                 </div>
             </div>
-            <div>
-                <p>
-                    Dejar telefono de contacto por inconvenientes:
-                </p>
+            <div>Telefono de Contacto:
+                
                 <input type="number" placeholder="Ej:+54 9 11 1234567">
+                <p>
+                    llamaran a este numero,si hay algun problema con el envio.
+                </p>
+                <label for="observaciones">Indicaciones adicionales para entregar tu pedido: <br>
+                    <textarea cols="30" rows="10"
+                        placeholder="Descripcion de la fachada,puntos de referencia para encontrarla,horarios de entrega,etc."></textarea>
+                </label>
             </div>
-            <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                <label for="floatingTextarea">Descripción del lugar etc.</label>
-            </div>
-            <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                    <label class="form-check-label" for="invalidCheck2">
-                        Estoy de acuerdo en realizar esta compra
-                    </label>
-                </div>
-            </div>
-            <div class="col-12">
-                <button class="btn btn-primary" type="submit">Enviar</button>
+            <div> Estoy de acuerdo en realizar esta compra
+                <input type="checkbox" name="acepto" value="1">
+                <input type="reset" name="restablecer">
+                <input type="submit" name="enviar">
             </div>
         </form>
     </section>
@@ -168,12 +155,9 @@
             <div>
                 <a href="https://es-la.facebook.com/"><img
                         src="https://img.icons8.com/fluency/48/000000/facebook-new.png" alt="Icono de Facebook" /></a>
-            </div>Facebook
-            <div>
                 <a href="https://www.instagram.com/"><img
-                        src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"
-                        alt="Icono de Instagram" /></a>
-            </div>Instagram
+                        src="https://img.icons8.com/color/48/000000/instagram-new--v1.png" alt="Icono de Instagram" /></a>
+            </div>Facebook Instagram
         </div>
         <div>
             <h3>Contacto:</h3>
