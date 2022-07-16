@@ -71,8 +71,6 @@ p {
     padding: 15px; } }
 
 @media (min-width: 1024px) {
-  body {
-    text-align: left; }
   footer {
     display: flex;
     flex-direction: row;
@@ -242,8 +240,7 @@ p {
         width: 170px;
         height: 160px; }
       .contenedorPadre .contenedorProductos .listaProductos {
-        text-align: left;
-        margin-left: 1px; } }
+        text-align: left; } }
 
 @media (min-width: 768px) {
   .contenedorPadre {
@@ -297,15 +294,15 @@ p {
     border: 6px ridge #003049;
     margin: 20px 20px; }
     .seccionFabricacion .imagenFabricación {
-      height: 260px;
-      width: 300px; }
+      width: 250px;
+      height: 200px; }
     .seccionFabricacion .contenedorVideo {
       display: inline-block;
-      border-radius: 8px;
       margin: auto; }
       .seccionFabricacion .contenedorVideo .videoFabricacion {
-        width: 300px;
-        height: 280px; } }
+        border-radius: 8px;
+        width: 250px;
+        height: 200px; } }
 
 @media (min-width: 768px) {
   .contenedorListado .listadoPasos ol li {
@@ -314,10 +311,10 @@ p {
     padding: 20px;
     margin: 25px 20px; }
     .seccionFabricacion .imagenFabricación {
-      width: 480px;
-      height: 320px; }
+      width: 450px;
+      height: 250px; }
     .seccionFabricacion .contenedorVideo .videoFabricacion {
-      width: 580px;
+      width: 600px;
       height: 450px; } }
 
 @media (min-width: 1024px) {
@@ -325,12 +322,8 @@ p {
     padding: 30px;
     margin: 50px 50px; }
     .seccionFabricacion .imagenFabricación {
-      justify-items: center;
       width: 500px;
-      height: 350px; }
-    .seccionFabricacion .contenedorVideo .videoFabricacion {
-      width: 650px;
-      height: 520px; } }
+      height: 300px; } }
 
 @media (min-width: 320px) {
   .tituloFormulario {

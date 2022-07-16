@@ -10,7 +10,7 @@
             text-align: left;
         }
     }
-
+    
     .seccionFabricacion{
         background-color:$paleta-color-dos;
         padding: 10px;
@@ -19,18 +19,18 @@
         margin: 20px 20px;
 
         .imagenFabricación{
-            height: 260px;
-            width: 300px;
+            width: 250px;
+            height: 200px;
         }
 
         .contenedorVideo{
             display: inline-block;
-            border-radius: 8px;
             margin: auto;
 
             .videoFabricacion{
-                width: 300px;
-                height: 280px;
+                border-radius: 8px;
+                width: 250px;
+                height:200px;
             }
         }
     }
@@ -50,14 +50,14 @@
         margin: 25px 20px;
 
         .imagenFabricación{
-            width: 480px;
-            height: 320px;
+            width: 450px;
+            height: 250px;
         }
         
         .contenedorVideo{
 
             .videoFabricacion{
-                width: 580px;
+                width: 600px;
                 height: 450px;
             }
         }
@@ -69,17 +69,8 @@
         margin: 50px 50px;
 
         .imagenFabricación{
-            justify-items: center;
             width: 500px;
-            height: 350px;
-        }
-
-        .contenedorVideo{
-
-            .videoFabricacion{
-                width: 650px;
-                height: 520px;
-            }
+            height: 300px;
         }
     }
 }
