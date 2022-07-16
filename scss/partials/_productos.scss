@@ -15,20 +15,20 @@
         .contenedorProductos{
             background-color:$paleta-color-uno;
             transition: all 1s;
-            padding: 20px 25px;
+            padding: 10px 10px;
             border-radius: 10px;
             margin: auto;
             margin-top: 10px;
-            margin-bottom: 40px;
+            margin-bottom: 10px;
 
             .imgProductos{
-                width: 250px;
-                height: 250px;
+                width: 170px;
+                height: 160px;
             }
 
             .listaProductos{
                 text-align: left;
-                margin-left: 5px;
+                margin-left: 1px;
             }    
         }
     }
@@ -42,8 +42,8 @@
         .contenedorProductos{
 
             .imgProductos{
-                width: 300px;
-                height: 300px;
+                width: 210px;
+                height: 200px;
             }
 
         }
@@ -67,23 +67,23 @@
             border-radius: 10px;
             margin: auto;
             margin-top: 10px;
-            margin-bottom: 40px;
+            margin-bottom: 15px;
             &.contenedorProductos:hover{
                 background-color:$paleta-color-cuatro ;
                 padding: 15px 25px;
                 border-radius: 10px;
                 margin: auto;
                 margin-top: 10px;
-                margin-bottom: 40px;
+                margin-bottom: 15px;
             }
 
             .imgProductos{
-                width: 310px;
-                height: 310px;
+                width: 230px;
+                height: 220px;
             }
     
             .listaProductos{
-                padding-top: 10px;
+                padding-top: 5px;
             }    
         }
     }

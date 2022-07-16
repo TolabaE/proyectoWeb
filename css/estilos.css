@@ -233,17 +233,17 @@ p {
     .contenedorPadre .contenedorProductos {
       background-color: #f77f00;
       transition: all 1s;
-      padding: 20px 25px;
+      padding: 10px 10px;
       border-radius: 10px;
       margin: auto;
       margin-top: 10px;
-      margin-bottom: 40px; }
+      margin-bottom: 10px; }
       .contenedorPadre .contenedorProductos .imgProductos {
-        width: 250px;
-        height: 250px; }
+        width: 170px;
+        height: 160px; }
       .contenedorPadre .contenedorProductos .listaProductos {
         text-align: left;
-        margin-left: 5px; } }
+        margin-left: 1px; } }
 
 @media (min-width: 768px) {
   .contenedorPadre {
@@ -251,8 +251,8 @@ p {
     flex-wrap: wrap;
     justify-content: stretch; }
     .contenedorPadre .contenedorProductos .imgProductos {
-      width: 300px;
-      height: 300px; } }
+      width: 210px;
+      height: 200px; } }
 
 @media (min-width: 1024px) {
   .contenedorSubtitulo {
@@ -267,19 +267,19 @@ p {
     border-radius: 10px;
     margin: auto;
     margin-top: 10px;
-    margin-bottom: 40px; }
+    margin-bottom: 15px; }
     .contenedorPadre .contenedorProductos.contenedorProductos:hover {
       background-color: #d62828;
       padding: 15px 25px;
       border-radius: 10px;
       margin: auto;
       margin-top: 10px;
-      margin-bottom: 40px; }
+      margin-bottom: 15px; }
     .contenedorPadre .contenedorProductos .imgProductos {
-      width: 310px;
-      height: 310px; }
+      width: 230px;
+      height: 220px; }
     .contenedorPadre .contenedorProductos .listaProductos {
-      padding-top: 10px; } }
+      padding-top: 5px; } }
 
 @media (min-width: 320px) {
   .contenedorListado {
