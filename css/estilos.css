@@ -49,7 +49,7 @@ p {
   text-align: justify; }
 
 .contenedorTitulo {
-  background-color: #d62828;
+  background-color: #d80e0e;
   color: white;
   padding: 10px; }
 
@@ -59,11 +59,8 @@ p {
 @media (min-width: 320px) {
   body {
     text-align: center; }
-  header {
-    position: sticky;
-    top: 0px; }
-    header .colorNav div ul li {
-      text-align: left; }
+  header .colorNav div ul li {
+    text-align: left; }
   footer {
     display: flex;
     flex-direction: column-reverse;
@@ -156,9 +153,11 @@ p {
         margin: 10px 5px; }
   .secciónPadre {
     padding: 10px; }
-  .contenedorFotos .fotoPrincipal {
-    width: 300px;
-    height: 320px; }
+  .contenedorFotos {
+    padding: 0px 25px; }
+    .contenedorFotos .fotoPrincipal {
+      width: 320px;
+      height: 320px; }
   .contenedorRecetas {
     display: flex;
     flex-direction: column;
@@ -181,8 +180,8 @@ p {
 
 @media (min-width: 768px) {
   .contenedorFotos .fotoPrincipal {
-    width: 750px;
-    height: 750px; }
+    width: 520px;
+    height: 520px; }
   .contenedorRecetas {
     margin: 20px; }
   .publicidadPadre .boxHijo {
@@ -209,9 +208,11 @@ p {
         transition: all 1s; }
         .publicidadPadre .boxHijo .publicidad.publicidad:hover {
           background-color: #f77f00; }
-  .contenedorFotos .fotoPrincipal {
-    width: 800px;
-    height: 800px; }
+  .contenedorFotos {
+    padding: 10px 40px; }
+    .contenedorFotos .fotoPrincipal {
+      width: 620px;
+      height: 620px; }
   .contenedorRecetas .cajaRecetas .boxPlatos {
     margin: 20px 10px;
     padding: 10px;
@@ -222,7 +223,7 @@ p {
 @media (min-width: 320px) {
   .contenedorSubtitulo h2 {
     font-weight: 700;
-    color: red; }
+    color: #d80e0e; }
   .contenedorPadre {
     display: flex;
     flex-direction: row;
@@ -231,7 +232,7 @@ p {
     .contenedorPadre .contenedorProductos {
       background-color: #f77f00;
       transition: all 1s;
-      padding: 10px 10px;
+      padding: 5px 10px;
       border-radius: 10px;
       margin: auto;
       margin-top: 10px;
@@ -243,35 +244,24 @@ p {
         text-align: left; } }
 
 @media (min-width: 768px) {
-  .contenedorPadre {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: stretch; }
-    .contenedorPadre .contenedorProductos .imgProductos {
-      width: 210px;
-      height: 200px; } }
+  .contenedorPadre .contenedorProductos .imgProductos {
+    width: 210px;
+    height: 200px; } }
 
 @media (min-width: 1024px) {
   .contenedorSubtitulo {
     text-align: center;
     padding: 30px 10px; }
-    .contenedorSubtitulo.contenedorSubtitulo h2:hover {
-      font-weight: 800; }
   .contenedorPadre .contenedorProductos {
     background-color: #f77f00;
     transition: all 1s;
-    padding: 15px 25px;
-    border-radius: 10px;
+    padding: 5px 25px;
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 15px; }
+    margin-top: 15px;
+    margin-bottom: 30px; }
     .contenedorPadre .contenedorProductos.contenedorProductos:hover {
-      background-color: #d62828;
-      padding: 15px 25px;
-      border-radius: 10px;
-      margin: auto;
-      margin-top: 10px;
-      margin-bottom: 15px; }
+      transform: scale(1.1);
+      background-color: orangered; }
     .contenedorPadre .contenedorProductos .imgProductos {
       width: 230px;
       height: 220px; }

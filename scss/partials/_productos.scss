@@ -2,7 +2,7 @@
     .contenedorSubtitulo{
         h2{
             font-weight: 700;
-            color: red;
+            color:$paleta-color-cuatro;
         }
     }
 
@@ -15,7 +15,7 @@
         .contenedorProductos{
             background-color:$paleta-color-uno;
             transition: all 1s;
-            padding: 10px 10px;
+            padding: 5px 10px;
             border-radius: 10px;
             margin: auto;
             margin-top: 10px;
@@ -35,9 +35,6 @@
 }
 @media (min-width:768px){
     .contenedorPadre{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content:stretch;
 
         .contenedorProductos{
 
@@ -45,7 +42,6 @@
                 width: 210px;
                 height: 200px;
             }
-
         }
     }
 }
@@ -53,28 +49,20 @@
     .contenedorSubtitulo{
         text-align: center;
         padding:30px 10px;
-        &.contenedorSubtitulo h2:hover{
-            font-weight: 800;
         }
-    }
     
     .contenedorPadre{
 
         .contenedorProductos{
             background-color:$paleta-color-uno;
             transition: all 1s;
-            padding: 15px 25px;
-            border-radius: 10px;
+            padding: 5px 25px;
             margin: auto;
-            margin-top: 10px;
-            margin-bottom: 15px;
+            margin-top: 15px;
+            margin-bottom: 30px;
             &.contenedorProductos:hover{
-                background-color:$paleta-color-cuatro ;
-                padding: 15px 25px;
-                border-radius: 10px;
-                margin: auto;
-                margin-top: 10px;
-                margin-bottom: 15px;
+                transform: scale(1.1);
+                background-color:orangered;
             }
 
             .imgProductos{

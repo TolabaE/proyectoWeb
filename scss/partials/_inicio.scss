@@ -38,8 +38,10 @@
         padding: 10px;
     }
     .contenedorFotos{
+        padding: 0px 25px;
+
         .fotoPrincipal{
-            width: 300px;
+            width: 320px;
             height: 320px;
         }
     }
@@ -73,8 +75,8 @@
 @media (min-width:768px){
     .contenedorFotos{
         .fotoPrincipal{
-            width: 750px;
-            height: 750px;
+            width: 520px;
+            height: 520px;
         }
     }
     .contenedorRecetas{
@@ -119,9 +121,11 @@
     }
 
     .contenedorFotos{
+        padding: 10px 40px;
+
         .fotoPrincipal{
-            width: 800px;
-            height: 800px;
+            width: 620px;
+            height: 620px;
         }
     }
 
