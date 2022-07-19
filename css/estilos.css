@@ -337,6 +337,7 @@ p {
       background-color: #fcbf49;
       padding: 20px;
       border-radius: 10px;
+      border: 5px groove #003049;
       margin-left: 5%;
       margin-right: 5%; } }
 
@@ -364,4 +365,4 @@ p {
 @media (min-width: 768px) {
   .contenedorArticulo {
     padding: 15px;
-    margin: 30px; } }
+    margin: 30px 50px; } }
