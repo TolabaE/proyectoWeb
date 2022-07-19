@@ -9,9 +9,6 @@ body{
     min-height: 100vh;
     background-color:$paleta-color-tres;
 }
-a{
-    border-radius: 8px;
-}
 header{
     text-transform: uppercase;
     box-shadow: 0px 0px 15px 0px rgb(22, 22, 21);
@@ -20,22 +17,32 @@ header{
 
         div ul li{
             padding: 8px 25px;
-            padding-left: 40px;
+            padding-left: 20px;
             border-radius: 6px;
+
             & a:hover{
                 background-color: $paleta-color-dos;
+                color: $paleta-color-seis;
                 border-radius: 8px;
-                padding: 8px 12px;
-            }             
-            
+                padding: 15px 12px;
+            }                                    
         }
     }
+}
+a{
+    font-size: 20px;
+    border-radius: 8px;
+    color: $paleta-color-seis;
+    text-decoration: none;
+    padding: 15px 12px;
 }
 footer{
     background-color:$paleta-color-uno;
 }
 figcaption{
     text-align: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     background-color: $paleta-color-uno;
 }
 figure{
@@ -56,13 +63,17 @@ p{
     text-align: justify;
 }
 .contenedorTitulo{
+    margin-top: 8px;
     background-color: $paleta-color-cuatro;
-    color: white;
+    color: $paleta-color-seis;
     padding: 10px;
 }
 .anchorLink{
-    color: red;
+    padding: 5px;
+    color: $paleta-color-cuatro;
+    font-size: 16px;
 }
+
 @media (min-width:320px){
     body{
         text-align: center;
