@@ -49,7 +49,7 @@ figure {
     border-radius: 8px; }
 
 h2 {
-  padding: 10px 0px 15px 30px; }
+  padding: 5px 0px; }
 
 p {
   padding: 10px 0px;
@@ -81,7 +81,7 @@ p {
   footer {
     display: flex;
     flex-direction: row;
-    padding: 10px 30px;
+    padding: 20px 30px;
     justify-content: space-between; }
   .contenedorTitulo {
     text-align: center;
@@ -329,7 +329,7 @@ p {
   .tituloFormulario {
     text-align: center;
     color: #fd0000;
-    padding: 0px 20px; }
+    padding: 15px 20px; }
   .contenedorForm {
     text-align: left;
     padding-bottom: 30px; }
