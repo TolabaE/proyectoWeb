@@ -14,9 +14,11 @@ header {
   box-shadow: 0px 0px 15px 0px #161615; }
   header .colorNav {
     background-color: #f77f00; }
+    header .colorNav .container-fluid .w-25 {
+      border-radius: 10px; }
     header .colorNav div ul li {
-      padding: 8px 25px;
-      padding-left: 20px;
+      padding: 8px 12px;
+      padding-left: 25px;
       border-radius: 6px; }
       header .colorNav div ul li a:hover {
         background-color: #fcbf49;
@@ -85,7 +87,12 @@ p {
     justify-content: space-between; }
   .contenedorTitulo {
     text-align: center;
-    padding: 20px; } }
+    padding: 20px;
+    transition: all 1s; }
+    .contenedorTitulo.contenedorTitulo:hover {
+      transform: scale(1.1); }
+    .contenedorTitulo h1 {
+      font-size: 40px; } }
 
 .encabezadoPadre {
   grid-area: navegación; }

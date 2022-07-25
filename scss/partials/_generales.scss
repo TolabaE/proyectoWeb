@@ -15,9 +15,16 @@ header{
     .colorNav{
         background-color: $paleta-color-uno;
 
+        .container-fluid{
+
+            .w-25{
+                border-radius: 10px;
+            }
+        }
+
         div ul li{
-            padding: 8px 25px;
-            padding-left: 20px;
+            padding: 8px 12px;
+            padding-left: 25px;
             border-radius: 6px;
 
             & a:hover{
@@ -103,5 +110,13 @@ p{
     .contenedorTitulo{
         text-align: center;
         padding: 20px;
+        transition: all 1s;        
+        &.contenedorTitulo:hover{
+            transform: scale(1.1);
+        }
+
+        h1{
+            font-size: 40px;
+        }
     }
 }
