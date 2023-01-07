@@ -1,10 +1,13 @@
 @media (min-width:320px){
     .tituloPrincipal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         grid-area: titulo;
         color:red;
-        font-size: 2em;
+        font-size: 1em;
         background-color:$paleta-color-dos;
-        padding: 20px;
+        padding: 10px;
         text-shadow: 5px 5px 6px rgb(10, 1, 1);
     }
     .publicidadPadre{
@@ -93,7 +96,6 @@
 @media (min-width:1024px){
     .tituloPrincipal{
         text-shadow: 7px 7px 10px rgb(10, 1, 1);
-        text-align: center;
         transition: all 1s;
         &.tituloPrincipal:hover{
             transform: scale(1.2);
